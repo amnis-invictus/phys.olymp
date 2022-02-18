@@ -70,7 +70,7 @@ a {
 .btn {
   border: none;
   font-family: inherit;
-  font-size: yellow;
+  font-size: inherit;
   color: inherit;
   background: none;
   cursor: pointer;
@@ -98,8 +98,8 @@ a {
 
 .btn-4 {
   border-radius: 50px;
-  border: 3px solid #fff;
-  color: #fff;
+  border: 3px solid yellow;
+  color: yellow;
   overflow: hidden;
 }
 
