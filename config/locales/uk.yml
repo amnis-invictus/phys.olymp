@@ -22,7 +22,7 @@ uk:
         registration_secret: Код доступу
         name: Прізвище, Ім'я, По батькові
         email: Ваш e-mail
-        city: Місто
+        city: Місто / Нвселений пункт / ОТГ
         institution: Ваш навчальний заклад
         grade: Клас
         contest_site: Заклад, у якому ви пишете олімпіаду
