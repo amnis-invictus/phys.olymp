@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Олімпіада з ІКТ</title>
-    <meta name="keywords" content="Олімпіада з ІКТ, олімпіада з інформаційних технологій, олімпіада, ікт, ІКТ">
+    <meta name="keywords" content="Дистанційні олімпіади школярів у Вінницькій області">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,17 +12,16 @@
   </head>
   <body>
     <div id="container">
-      <h1>Інформаційні технології</h1>
+      <h1>Дистанційні олімпіади школярів у Вінницькій області</h1>
       <div align="center">
-        <p><span>Вітаємо вас на офіційному сайті олімпіади</span></p>
         <% Contest.where(archived: false).find_each do |contest| %>
           <%= link_to contest.display_name, contest, class: 'btn btn-4 btn-4c' %>
         <% end %>
         <%= link_to 'Архів', [:contests], class: 'btn btn-4 btn-4c' unless Contest.any_active? %>
         <p>
           <span>
-            <a href="/system/ikt_2022.docx" style="text-decoration: underline; color: #09ffea;">
-              Пам'ятка учасника олімпіади (оновлено 08.02.2022)
+            <a href="/system/info.docx" style="text-decoration: underline; color: #09ffea;">
+              Пам'ятка учасника олімпіади
             </a>
           </span>
         </p>
